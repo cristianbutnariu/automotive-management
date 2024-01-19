@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddExpense">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Add new expense"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="148dp"
+        android:text="Time"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expensesOptionsGroup" />
+
+    <RadioGroup
+        android:id="@+id/expensesOptionsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/fuelBtn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="3dp"
+            android:text="Fuel"
+            android:textColor="@drawable/radio_flat_text_selector" />
+
+        <RadioButton
+            android:id="@+id/serviceBtn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="3dp"
+            android:text="Service"
+            android:textColor="@drawable/radio_flat_text_selector" />
+
+        <RadioButton
+            android:id="@+id/taxesBtn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="3dp"
+            android:text="Taxes"
+            android:textColor="@drawable/radio_flat_text_selector" />
+
+        <RadioButton
+            android:id="@+id/otherBtn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radio_flat_selector"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="3dp"
+            android:text="Other"
+            android:textColor="@drawable/radio_flat_text_selector" />
+
+    </RadioGroup>
+
+    <include
+        android:id="@+id/checkRoadTaxPhotoButton"
+        layout="@layout/uploadphoto_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/otherTV"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/timeText"
+        android:layout_width="182dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="4dp"
+        android:focusable="false"
+        android:clickable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/measuringUnitTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="60dp"
+        android:text="km"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currencyTV" />
+
+    <TextView
+        android:id="@+id/otherTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="112dp"
+        android:text="Other details"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mileageValue" />
+
+    <EditText
+        android:id="@+id/priceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Value"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateText" />
+
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="178dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/addExpenseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Add expense"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Date"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expensesOptionsGroup" />
+
+    <TextView
+        android:id="@+id/currencyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="56dp"
+        android:text="RON"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText" />
+
+    <EditText
+        android:id="@+id/mileageValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Mileage"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceValue" />
+
+    <EditText
+        android:id="@+id/detailsValue"
+        android:layout_width="351dp"
+        android:layout_height="176dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/reminder_menu"
+        android:icon="@drawable/reminder"
+        android:title="Reminders"/>
+
+    <item
+        android:id="@+id/reports_menu"
+        android:icon="@drawable/reports"
+        android:title="Reports"/>
+
+    <item
+        android:id="@+id/service_menu"
+        android:icon="@drawable/service"
+        android:title="Service"/>
+
+    <item
+        android:id="@+id/warning_menu"
+        android:icon="@drawable/warning"
+        android:title="Help"/>
+
+
+</menu>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AutomotiveManagement</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="reminderFragment">Reminder fragment</string>
+    <string name="reportFragment">Reports fragment</string>
+    <string name="serviceFragment">Service fragment</string>
+    <string name="warningFragment">Warning fragment</string>
+    <string name="app_banner_text">Hello!</string>
+    <string name="add_car_button">Add car</string>
+</resources>

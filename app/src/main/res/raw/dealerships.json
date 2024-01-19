@@ -1,0 +1,62 @@
+[
+  {
+    "make": "Hyundai",
+    "town": "Bucharest",
+    "name": "Tiriac Auto",
+    "phoneNumber": "0784141414",
+    "address": "Parcului 55-57",
+    "description": "L-V: 08-18",
+    "longitude": 26.0582368846594,
+    "latitude": 44.4794045969236
+  },
+  {
+    "make": "Hyundai",
+    "town": "Bucharest",
+    "name": "DAB Auto",
+    "phoneNumber": "0758999325",
+    "address": "Cornu Luncii 2-4",
+    "description": "L-V: 09-15",
+    "longitude": 26.1477947785367,
+    "latitude": 44.4055055740815
+  },
+  {
+    "make": "Peugeot",
+    "town": "Bucharest",
+    "name": "Eurial Militari",
+    "phoneNumber": "0743582117",
+    "address": "Iuliu Maniu 572-574",
+    "description": "L-V: 09-18",
+    "longitude": 25.9803556576588,
+    "latitude": 44.4358453475516
+  },
+  {
+    "make": "Peugeot",
+    "town": "Bucharest",
+    "name": "Eurial Otopeni",
+    "phoneNumber": "0219160",
+    "address": "Calea Bucurestilor 24",
+    "description": "L-V: 08-17",
+    "longitude": 26.0701512467557,
+    "latitude": 44.542374611601
+  },
+  {
+    "make": "Peugeot",
+    "town": "Bucharest",
+    "name": "Eurial Pantelimon",
+    "phoneNumber": "0219160",
+    "address": "Biruintei 1B",
+    "description": "L-V: 8.30-17",
+    "longitude": 26.2090461693188,
+    "latitude": 44.4473610301968
+  },
+  {
+    "make": "Renault",
+    "town": "Bucharest",
+    "name": "Serus Timisoara",
+    "phoneNumber": "0214443335",
+    "address": "Timisoara 60E",
+    "description": "L-V: 8-16.30",
+    "longitude": 26.011714,
+    "latitude": 44.425123
+  }
+]

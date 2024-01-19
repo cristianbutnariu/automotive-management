@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/design_default_color_primary"
+    android:id="@+id/appToolbar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_banner_text"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/addCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/icons8_add_50_1_"
+        android:contentDescription="@string/add_car_button"
+        android:minWidth="48dp"
+        android:minHeight="48dp" />
+
+
+</androidx.appcompat.widget.Toolbar>

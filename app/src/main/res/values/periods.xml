@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="insuranceDuration">
+        <item value='1'>1 Month</item>
+        <item value='2'>2 Months</item>
+        <item value='3'>3 Months</item>
+        <item value='6'>6 Months</item>
+        <item value='9'>9 Months</item>
+        <item value='11'>11 Months</item>
+        <item value='12'>12 Months</item>
+    </string-array>
+    <string-array name="inspectionDuration">
+        <item value='0.5'>6 Months</item>
+        <item value='1'>1 Year</item>
+        <item value='2'>2 Years</item>
+        <item value='3'>3 Years</item>
+    </string-array>
+    <string-array name="roadTaxDuration">
+        <item value='0.25'>7 Days</item>
+        <item value='1'>1 Month</item>
+        <item value='3'>3 Months</item>
+        <item value='12'>12 Months</item>
+    </string-array>
+    <string-array name="serviceDuration">
+        <item value='0.5'>6 Months</item>
+        <item value='1'>1 Year</item>
+        <item value='2'>2 Years</item>
+    </string-array>
+</resources>

@@ -1,0 +1,136 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "0c0591a0bda594c9d6477c8d88781a14",
+    "entities": [
+      {
+        "tableName": "cars",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `make` TEXT, `model` TEXT, `registrationPlate` TEXT, `year` INTEGER NOT NULL, `insurance` INTEGER, `insuranceCreation` INTEGER, `inspection` INTEGER, `inspectionCreation` INTEGER, `roadTax` INTEGER, `roadTaxCreation` INTEGER, `serviceDate` INTEGER, `serviceDateCreation` INTEGER, `serviceKm` INTEGER NOT NULL, `insurancePhotoPath` TEXT, `inspectionPhotoPath` TEXT, `roadTaxPhotoPath` TEXT, `servicePhotoPath` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "make",
+            "columnName": "make",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "model",
+            "columnName": "model",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "registrationPlate",
+            "columnName": "registrationPlate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "year",
+            "columnName": "year",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "insurance",
+            "columnName": "insurance",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "insuranceCreation",
+            "columnName": "insuranceCreation",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "inspection",
+            "columnName": "inspection",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "inspectionCreation",
+            "columnName": "inspectionCreation",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roadTax",
+            "columnName": "roadTax",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roadTaxCreation",
+            "columnName": "roadTaxCreation",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceDate",
+            "columnName": "serviceDate",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceDateCreation",
+            "columnName": "serviceDateCreation",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serviceKm",
+            "columnName": "serviceKm",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "insurancePhotoPath",
+            "columnName": "insurancePhotoPath",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "inspectionPhotoPath",
+            "columnName": "inspectionPhotoPath",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roadTaxPhotoPath",
+            "columnName": "roadTaxPhotoPath",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "servicePhotoPath",
+            "columnName": "servicePhotoPath",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '0c0591a0bda594c9d6477c8d88781a14')"
+    ]
+  }
+}
